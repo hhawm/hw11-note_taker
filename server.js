@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 
 // Sets up the Express App
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 const todos = [
@@ -35,11 +35,6 @@ app.post("/api/todos", function (req, res) {
   console.log(req.body);
   todos.push(req.body);
   res.send(200);
-});
-
-// Starts the server to begin listening
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
 });
 
 

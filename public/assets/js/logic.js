@@ -5,9 +5,7 @@ const newTodoButton =
         console.log(data);
         renderTodos(data);
         data.forEach(todo =>
-            todolistUl.append(`
-        <li>${todo.text})</li>
-        `)
+            todolistUl.append(`<li>${todo.text})</li>`)
         )
     })
 
