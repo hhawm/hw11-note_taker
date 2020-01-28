@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Grabs HTML files in public folder
 app.use(express.static("public"));
+
 // Sets up the Express app to handle data parsing (middle ware)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -45,6 +46,7 @@ app.delete("/api/notes/:note", function (req, res) {
   }
 });
 
+// Starts server.js at localhost:3000
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
 });
