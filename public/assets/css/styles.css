@@ -2,11 +2,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.save-note {
+/* .save-note {
   display: none;
-}
+} */
 
 .icons i {
   margin-left: 15px;
@@ -38,11 +39,16 @@ html, body {
   color: #757575;
 }
 
+h4 {
+  margin: 16px;
+}
+
 .list-container .card {
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  margin: 16px;
 }
 
 .list-container {

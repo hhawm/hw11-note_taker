@@ -37,11 +37,9 @@ app.post("/api/todos", function (req, res) {
   res.send(200);
 });
 
-
-
-
-
-
+app.listen(PORT, function () {
+  console.log("App listening on PORT " + PORT);
+});
 
 
 
@@ -99,6 +97,3 @@ app.post("/api/characters", function (req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
-});
