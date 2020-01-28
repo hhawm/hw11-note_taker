@@ -29,6 +29,8 @@ app.post("/api/notes", function (req, res) {
   note.id = note.title.replace(/\s+/g, "").toLowerCase();
   notes.push(note);
   console.log(notes);
+  //This will refresh page with new note
+  res.json(note);
 });
 
 // Displays all current notes from API
