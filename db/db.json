@@ -1,10 +1,12 @@
 [
     {
-        "title": "walk dog",
-        "text": "dog needs walking"
+        "title": "Walk Dog",
+        "text": "dog needs walking",
+        "id": "walkdog"
     },
     {
-        "title": "wash car",
-        "text": "wash the Jeep when it is not too cold"
+        "title": "Wash Car",
+        "text": "wash the Jeep when it is not too cold",
+        "id": "washcar"
     }
 ]

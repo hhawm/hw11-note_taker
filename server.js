@@ -21,9 +21,7 @@ app.get("/notes", function (req, res) {
   res.sendFile(path.join(__dirname, "./public/notes.html"))
 });
 
-
-
-// Create new note input
+// Create new note input into API
 app.post("/api/notes", function (req, res) {
   console.log(req.body);
   let note = req.body;
@@ -32,12 +30,12 @@ app.post("/api/notes", function (req, res) {
   console.log(notes);
 });
 
-// Displays all current notes
+// Displays all current notes from API
 app.get("/api/notes", function (req, res) {
   return res.json(notes);
 });
 
-// Deletes selected note
+// Deletes selected note from API
 app.delete("/api/notes/:note", function (req, res) {
   let deletedNote = req.params.note;
   for (let i = 0; i < notes.length; i++) {
